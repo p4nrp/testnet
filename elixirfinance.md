@@ -1,5 +1,5 @@
 # Running an Elixir v2.0 Validator
-### 1. Installation
+* [Installation](https://github.com/p4nrp/testnet/blob/main/elixirfinance.md#1-installation-1)
 
 ### 1. Installation
 
