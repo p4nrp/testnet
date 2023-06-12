@@ -4,6 +4,11 @@
 * [Start Your Validator](https://github.com/p4nrp/testnet/blob/main/elixirfinance.md#3-start-your-validator)
 * [Usefull Command](https://github.com/p4nrp/testnet/blob/main/elixirfinance.md#usefull-commands)
 
+
+<p align="center">
+  <img height="auto" width="auto" src="https://i.imgur.com/FEvQiq0.png">
+</p>
+
 ### 1. Installation
 
 Install docker 
