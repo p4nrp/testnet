@@ -7,7 +7,7 @@
 
 
 * [Installation](https://github.com/p4nrp/testnet/blob/main/seinetwork.md#1-installation-1)
-* [Setting DockerFile](https://github.com/p4nrp/testnet/blob/main/seinetwork.md#2-setting-dockerfile)
+* [Wallet](https://github.com/p4nrp/testnet/blob/main/seinetwork.md#2-Wallet)
 * [Start Your Validator](https://github.com/p4nrp/testnet/blob/main/seinetwork.md#3-start-your-validator)
 * [Usefull Command](https://github.com/p4nrp/testnet/blob/main/seinetwork.md#usefull-commands)
 
