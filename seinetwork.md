@@ -57,9 +57,30 @@ echo 'export SEI_WALLET_ADDRESS='${SEI_WALLET_ADDRESS} >> $HOME/.bash_profile
 echo 'export SEI_VALOPER_ADDRESS='${SEI_VALOPER_ADDRESS} >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
-Edit file DockerFile with your address and your private key
+
+
+Cek Wallet Ballance
 ```
-nano DockerFile
+seid query bank balances $SEI_WALLET_ADDRESS
+```
+
+Cek status 
+```
+seid status 2>&1 | jq .SyncInfo
+```
+
+Create Validatro and Register to block 
+```
+seid tx staking create-validator \
+  --amount 1000000usei \
+  --from $WALLET \
+  --commission-max-change-rate "0.01" \
+  --commission-max-rate "0.2" \
+  --commission-rate "0.07" \
+  --min-self-delegation "1" \
+  --pubkey  $(seid tendermint show-validator) \
+  --moniker $NODENAME \
+  --chain-id $SEI_CHAIN_ID
 ```
 
 Build DockerFile image
