@@ -83,30 +83,4 @@ seid tx staking create-validator \
   --chain-id $SEI_CHAIN_ID
 ```
 
-Build DockerFile image
-```
-docker build . -f Dockerfile -t elixir-validator
-```
 
-### 3. Start Your Validator
-Run the validator by executing the following docker command: 
-```
-docker run -it --name ev elixir-validator
-```
-Optionally, you can configure the the validator to automatically run at startup:
-```
-docker run -d --restart unless-stopped --name ev elixir-validator
-```
-Your validator should start up in 20 seconds and begin submitting order proposals to the network.
-
-
-# Usefull commands
-check docker available running
-```
-docker ps
-```
-
-check docker logs realtime run
-```
-docker logs -f machinename
-```
