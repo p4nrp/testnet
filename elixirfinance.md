@@ -81,6 +81,13 @@ check docker logs realtime run
 docker logs -f machinename
 ```
 
+Upgrading Node 
+```
+docker kill ev
+docker rm ev
+docker pull elixirprotocol/validator:testnet-2
+docker build . -f Dockerfile -t elixir-validator
+```
 
 
 
