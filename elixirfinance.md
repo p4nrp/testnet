@@ -41,6 +41,11 @@ Make sure you are about to install from the Docker repo instead of the default U
 apt-cache policy docker-ce
 ```
 
+Install Docker
+```
+sudo apt install docker-ce
+```
+
 ### 2. Setting DockerFile
 
 Download dockerfile from elixir finance
