@@ -9,7 +9,7 @@
 * [Installation Docker](https://github.com/p4nrp/testnet/blob/main/taiko.md#1-Installation-Docker)
 * [Alchemy Setting](https://github.com/p4nrp/testnet/blob/main/taiko.md#2-Alchemy-Setting)
 * [Setup And Run Node](https://github.com/p4nrp/testnet/blob/main/taiko.md#3-Setup-And-Run-Node)
-* [Start Your Validator](https://github.com/p4nrp/testnet/blob/main/taiko.md#4-start-your-validator)
+* [Monitor Node](https://github.com/p4nrp/testnet/blob/main/taiko.md#4-Monitor-Node)
 * [Usefull Command](https://github.com/p4nrp/testnet/blob/main/taiko.md#usefull-commands)
 
 
@@ -98,3 +98,10 @@ sudo apt install docker-ce
    ```console
    docker compose logs -f | grep "💰 Your block proof was accepted"
    ```
+   
+### 4. Monitor Node
+
+A node dashboard will be running on `localhost` on the `GRAFANA_PORT` you set in your `.env` or `.env.l3` file. For a Grimsvotn L2 node that would default to: 
+```console
+http://localhost:3001/d/L2ExecutionEngine/l2-execution-engine-overview
+```
