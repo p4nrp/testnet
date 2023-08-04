@@ -61,7 +61,6 @@ sudo apt install docker-ce
 1. Download Node
    ```console
    git clone https://github.com/taikoxyz/simple-taiko-node.git
-   cd simple-taiko-node
    ```
 3. To Directory simple-taiko-node
    ```console
