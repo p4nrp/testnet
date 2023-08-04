@@ -58,3 +58,44 @@ sudo apt install docker-ce
 8. Copy HTTP & WSS
 
 ### 3. Setup And Run Node
+1. Download Node
+   ```console
+   git clone https://github.com/taikoxyz/simple-taiko-node.git
+   cd simple-taiko-node
+   ```
+3. To Directory simple-taiko-node
+   ```console
+   cd simple-taiko-node
+   ```
+4. Copy .env
+   ```console
+   cp .env.sample .env
+   ```
+3. Edit .env
+   ```console
+   nano .env
+   ```
+   Change value `L1_ENDPOINT_HTTP` dan `L1_ENDPOINT_WS` with your HTTPS And WS From Alchemy
+
+   Change Value `ENABLE_PROVER` to `true`
+   
+   Change Value `L1_PROVER_PRIVATE_KEY` with your private key from metamask (new wallet)
+   
+   Save file CTRL + x + Y + enter
+   
+4. Update Node
+   ```console
+   docker compose pull
+   ```
+5. Run Node
+   ```console
+   docker compose up -d
+   ```
+6. Check log
+   ```console
+   docker compose logs -f 
+   ```
+7. Cek log for block approval
+   ```console
+   docker compose logs -f | grep "💰 Your block proof was accepted"
+   ```
