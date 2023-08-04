@@ -8,7 +8,7 @@
 
 * [Installation Docker](https://github.com/p4nrp/testnet/blob/main/taiko.md#1-Installation-Docker)
 * [Alchemy Setting](https://github.com/p4nrp/testnet/blob/main/taiko.md#2-Alchemy-Setting)
-* [Setting DockerFile](https://github.com/p4nrp/testnet/blob/main/taiko.md#3-setting-dockerfile)
+* [Setup And Run Node](https://github.com/p4nrp/testnet/blob/main/taiko.md#3-Setup-And-Run-Node)
 * [Start Your Validator](https://github.com/p4nrp/testnet/blob/main/taiko.md#4-start-your-validator)
 * [Usefull Command](https://github.com/p4nrp/testnet/blob/main/taiko.md#usefull-commands)
 
@@ -57,3 +57,4 @@ sudo apt install docker-ce
 7. Select `VIEW KEY`
 8. Copy HTTP & WSS
 
+### 3. Setup And Run Node
