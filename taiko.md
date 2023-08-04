@@ -6,14 +6,14 @@
 </p>
 
 
-* [Installation](https://github.com/p4nrp/testnet/blob/main/taiko.md#1-installation-1)
+* [Installation Docker](https://github.com/p4nrp/testnet/blob/main/taiko.md#1-Installation-Docker)
 * [Alchemy Setting](https://github.com/p4nrp/testnet/blob/main/taiko.md#2-Alchemy-Setting)
 * [Setting DockerFile](https://github.com/p4nrp/testnet/blob/main/taiko.md#3-setting-dockerfile)
 * [Start Your Validator](https://github.com/p4nrp/testnet/blob/main/taiko.md#4-start-your-validator)
 * [Usefull Command](https://github.com/p4nrp/testnet/blob/main/taiko.md#usefull-commands)
 
 
-### 1. Installation
+### 1. Installation Docker
 
 Install docker 
 install a few prerequisite packages which let apt use packages over HTTPS:
