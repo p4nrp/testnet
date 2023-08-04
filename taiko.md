@@ -48,3 +48,12 @@ sudo apt install docker-ce
 ```
 
 ### 2. Alchemy Setting
+1. Create [AlchemyAccount](https://auth.alchemy.com/signup?redirectUrl=https%3A%2F%2Fdashboard.alchemy.com%2Fsignup%2F%3Freferrer_origin%3DDIRECT)
+2. Select `+CREATE NEW APP`
+3. Define name apps
+4. Network Use Sepolia
+5. `CREATE APP`
+6. Navigate to apps already created `VIEW DETAILS`
+7. Select `VIEW KEY`
+8. Copy HTTP & WSS
+
