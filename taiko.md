@@ -74,7 +74,7 @@ sudo apt install docker-ce
    ```console
    nano .env
    ```
-   Change value `L1_ENDPOINT_HTTP` dan `L1_ENDPOINT_WS` with your HTTPS And WSS From Alchemy
+   Change value `L1_ENDPOINT_HTTP` and `L1_ENDPOINT_WS` with your HTTPS And WSS From Alchemy
 
    Change Value `ENABLE_PROVER` to `true`
    
