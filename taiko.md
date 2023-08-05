@@ -59,19 +59,19 @@ sudo apt install docker-ce
 
 ### 3. Setup And Run Node
 1. Download Node
-   ```console
+   ```
    git clone https://github.com/taikoxyz/simple-taiko-node.git
    ```
 3. To Directory simple-taiko-node
-   ```console
+   ```
    cd simple-taiko-node
    ```
 4. Copy .env
-   ```console
+   ```
    cp .env.sample .env
    ```
 3. Edit .env
-   ```console
+   ```
    nano .env
    ```
    Change value `L1_ENDPOINT_HTTP` and `L1_ENDPOINT_WS` with your HTTPS And WSS From Alchemy
@@ -83,25 +83,25 @@ sudo apt install docker-ce
    Save file CTRL + x + Y + enter
    
 4. Update Node
-   ```console
+   ```
    docker compose pull
    ```
 5. Run Node
-   ```console
+   ```
    docker compose up -d
    ```
 6. Check log
-   ```console
+   ```
    docker compose logs -f 
    ```
 7. Cek log for block approval
-   ```console
+   ```
    docker compose logs -f | grep "💰 Your block proof was accepted"
    ```
    
 ### 4. Monitor Node
 
 A node dashboard will be running on `localhost` on the `GRAFANA_PORT` you set in your `.env` or `.env.l3` file. For a Grimsvotn L2 node that would default to: 
-```console
+```
 http://localhost:3001/d/L2ExecutionEngine/l2-execution-engine-overview
 ```
