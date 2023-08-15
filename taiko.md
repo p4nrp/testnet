@@ -94,7 +94,20 @@ sudo apt install docker-ce
    ```
    docker compose logs -f 
    ```
-7. Cek log for block approval
+   or use
+   ```
+   docker-compose ps
+   ```
+   ```
+   docker inspect CONTAINER_NAME | grep log
+   ```
+   ```
+   cd LOG_FOLDER
+   ```
+   file -i .log
+   The files type: "application/octet-stream; charset=binary" have errors, can be RENAMED/REMOVED/UPDATED for fix.
+   ```
+8. Cek log for block approval
    ```
    docker compose logs -f | grep "💰 Your block proof was accepted"
    ```
