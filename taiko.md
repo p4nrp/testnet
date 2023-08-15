@@ -102,6 +102,9 @@ sudo apt install docker-ce
    docker inspect CONTAINER_NAME | grep log
    ```
    ```
+   tail -f
+   ```
+   ```
    cd LOG_FOLDER
    ```
    file -i .log
