@@ -96,7 +96,7 @@ sudo apt install docker-ce
    ```
    or use
    ```
-   docker-compose ps
+   docker ps
    ```
    ```
    docker inspect CONTAINER_NAME | grep log
