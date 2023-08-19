@@ -350,10 +350,10 @@ contract BEP20Token is Context, IBEP20, Ownable {
   string private _name;
 
   constructor() public {
-    _name = {{TOKEN NAME}};
-    _symbol = {{TOKEN SYMBOL}};
-    _decimals = {{DECIMAL}};
-    _totalSupply = {{TOTAL SUPPLY}};
+    _name = "p4nBT";
+    _symbol = "PBT";
+    _decimals = 18;
+    _totalSupply = 100000000000000000000000;
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
