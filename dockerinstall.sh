@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Install necessary packages
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
