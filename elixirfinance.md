@@ -45,6 +45,10 @@ Install Docker
 ```
 sudo apt install docker-ce
 ```
+Install docker with bash
+```
+
+```
 
 ### 2. Setting DockerFile
 
