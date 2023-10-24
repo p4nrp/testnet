@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Install necessary packages
-sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
 
 # Add Docker GPG key
@@ -18,7 +17,7 @@ apt-cache policy docker-ce
 
 # Install Docker
 sudo apt install -y docker-ce
-#!/bin/bash
+
 
 # Install necessary packages
 sudo apt update
