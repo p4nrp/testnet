@@ -1,3 +1,5 @@
+# Running an Run a single-proc squid
+
 <p align="center">
   <img height="auto" width="auto" src="https://i.imgur.com/N9KAUN8.png">
 </p>
