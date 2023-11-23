@@ -102,5 +102,53 @@ sudo nano /etc/chainflip/config/Settings.toml
 Editing the Config
 Copy the following to your `nano` editor. You also need to replace `IP_ADDRESS_OF_YOUR_NODE` with the public IP Address of your server. To get the public IP of your node you can run this command: `curl -w "\n" ifconfig.me`.
 Also you'll need to provide the `ws_endpoint`, and `http_endpoint` for whichever Ethereum client you've selected. It will look different depending on which client you select:
+```
+# Default configurations for the CFE
+[node_p2p]
+node_key_file = "/etc/chainflip/keys/node_key_file"
+ip_address = "IP_ADDRESS_OF_YOUR_NODE"
+port = "8078"
+ 
+[state_chain]
+ws_endpoint = "ws://127.0.0.1:9944"
+signing_key_file = "/etc/chainflip/keys/signing_key_file"
+ 
+[eth]
+# Ethereum private key file path. This file should contain a hex-encoded private key.
+private_key_file = "/etc/chainflip/keys/ethereum_key_file"
+ 
+[eth.rpc]
+ws_endpoint = "wss://my_local_geth_node:8546"
+http_endpoint = "https://my_local_geth_node:8545"
+ 
+# Optional
+# [eth.backup_rpc]
+# ws_endpoint = "wss://some_public_rpc.com:443/<secret_access_key>"
+# http_endpoint = "https://some_public_rpc.com:443/<secret_access_key>"
+ 
+[dot.rpc]
+ws_endpoint = "wss://rpc-pdot.chainflip.io:443"
+http_endpoint = "https://rpc-pdot.chainflip.io:443"
+ 
+# Optional
+# [dot.backup_rpc]
+# ws_endpoint = "wss://rpc-pdot2.chainflip.io:443"
+# http_endpoint = "https://rpc-pdot2.chainflip.io:443"
+ 
+[btc.rpc]
+basic_auth_user = "flip"
+basic_auth_password = "flip"
+http_endpoint = "http://a108a82b574a640359e360cf66afd45d-424380952.eu-central-1.elb.amazonaws.com"
+ 
+# Optional
+# [btc.backup_rpc]
+# basic_auth_user = "flip2"
+# basic_auth_password = "flip2"
+# http_endpoint = "http://second-node-424380952.eu-central-1.elb.amazonaws.com"
+ 
+# Optional (default: 36079)
+# [logging]
+# command_server_port = 36079
+```
 
 
