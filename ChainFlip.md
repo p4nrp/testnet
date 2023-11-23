@@ -7,7 +7,7 @@
 
 
 * [Installation](https://github.com/p4nrp/testnet/blob/main/elixirfinance.md#1-installation-1)
-* [Setting DockerFile](https://github.com/p4nrp/testnet/blob/main/elixirfinance.md#2-setting-dockerfile)
+* [StartNode](https://github.com/p4nrp/testnet/blob/main/elixirfinance.md#2-setting-dockerfile)
 * [Start Your Validator](https://github.com/p4nrp/testnet/blob/main/elixirfinance.md#3-start-your-validator)
 * [Usefull Command](https://github.com/p4nrp/testnet/blob/main/elixirfinance.md#usefull-commands)
 
@@ -154,7 +154,7 @@ http_endpoint = "http://a108a82b574a640359e360cf66afd45d-424380952.eu-central-1.
 # command_server_port = 36079
 ```
 
-
+### 2. Start The Node
 # Starting the Node
 To start the chainflip-node, run the following command.
 ```
