@@ -101,7 +101,6 @@ sudo nano /etc/chainflip/config/Settings.toml
 
 Editing the Config
 Copy the following to your `nano` editor. You also need to replace `IP_ADDRESS_OF_YOUR_NODE` with the public IP Address of your server. To get the public IP of your node you can run this command: `curl -w "\n" ifconfig.me`.
-
 Also you'll need to provide the `ws_endpoint`, and `http_endpoint` for whichever Ethereum client you've selected. It will look different depending on which client you select:
 
 
