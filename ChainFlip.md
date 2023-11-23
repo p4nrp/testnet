@@ -14,8 +14,7 @@
 
 ### 1. Installation
 
-Install Go lang
-
+# Install Go lang
 update & upgrade package
 ```
 apt update -y && apt upgrade -y
@@ -30,6 +29,28 @@ check go lang version
 ```
 apt install golang-go
 ```
+
+# Install Geth
+The following command enables the launchpad repository:
+```
+sudo add-apt-repository -y ppa:ethereum/ethereum
+
+```
+
+Then, to install the stable version of go-ethereum:
+```
+sudo apt-get update
+sudo apt-get install ethereum
+```
+
+Updating an existing Geth installation to the latest version can be achieved by stopping the node and running the following commands:
+```
+sudo apt-get update
+sudo apt-get install ethereum
+sudo apt-get upgrade geth
+```
+
+# Install ChainFlip
 
 Adding Chainflip APT Repo
 Download Chainflip GPG key from our official repo:
