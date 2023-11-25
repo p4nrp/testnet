@@ -212,6 +212,9 @@ At the start, you should see that your node is synchronising to the network, som
 2023-03-24 08:22:35 ⏩ Block history, #43200 (11 peers), best: #1913250 (0x4bc1…8362), finalized #1913248 (0xbb74…9178), ⬇ 330.6kiB/s ⬆ 145.2kiB/s
 ```
 
+# Source
+[.](https://docs.chainflip.io/perseverance/validator-setup/prerequisites)
+
 
 
 
