@@ -213,7 +213,7 @@ At the start, you should see that your node is synchronising to the network, som
 ```
 
 # Source
-[.](https://docs.chainflip.io/perseverance/validator-setup/prerequisites)
+[ChainFlip Docs](https://docs.chainflip.io/perseverance/validator-setup/prerequisites)
 
 
 
