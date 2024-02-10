@@ -7,7 +7,7 @@
 
 
 * [Installation Docker](https://github.com/p4nrp/testnet/blob/main/taiko.md#1-Installation-Docker)
-* [Alchemy Setting](https://github.com/p4nrp/testnet/blob/main/taiko.md#2-Alchemy-Setting)
+* [Establish a directory and initial the config.json](https://github.com/p4nrp/testnet/blob/main/taiko.md#2-Alchemy-Setting)
 * [Setup And Run Node](https://github.com/p4nrp/testnet/blob/main/taiko.md#3-Setup-And-Run-Node)
 * [Monitor Node](https://github.com/p4nrp/testnet/blob/main/taiko.md#4-Monitor-Node)
 * [Usefull Command](https://github.com/p4nrp/testnet/blob/main/taiko.md#usefull-commands)
