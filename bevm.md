@@ -23,10 +23,19 @@ curl -fsSL https://get.docker.com | bash -s docker
 
 
 ### 2. Establish a directory and initial the config.json
-1. Make a new directory and enter it ```mkdir node && cd node```
-2. Create a JSON Configuration File ```touch config.json```
-3. Then, open the file in a text editor. The vim editor is used here as an example: ```nano config.json```
-4. Paste the content below (You need to adjust the content on your own.)
+1. Make a new directory and enter it
+```
+mkdir node && cd node
+```
+3. Create a JSON Configuration File
+```
+touch config.json
+```
+5. Then, open the file in a text editor. The vim editor is used here as an example:
+```
+nano config.json
+```
+7. Paste the content below (You need to adjust the content on your own.)
 Change Your-Node-Name on your own
 ```
 {
