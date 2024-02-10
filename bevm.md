@@ -27,7 +27,7 @@ curl -fsSL https://get.docker.com | bash -s docker
 2. Create a JSON Configuration File ```touch config.json```
 3. Then, open the file in a text editor. The vim editor is used here as an example: ```nano config.json```
 4. Paste the content below (You need to adjust the content on your own.)
-5. ```
+```
    {
   "chain": "testnet",
   "log-dir": "/log",
@@ -47,68 +47,8 @@ curl -fsSL https://get.docker.com | bash -s docker
   "telemetry-url": "wss://telemetry-testnet.bevm.io/submit 1",
   "bootnodes": []
 }
-   ```
-7. Navigate to apps already created `VIEW DETAILS`
-8. Select `VIEW KEY`
-9. Copy HTTP & WSS
+```
 
-### 3. Setup And Run Node
-1. Download Node
-   ```
-   git clone https://github.com/taikoxyz/simple-taiko-node.git
-   ```
-3. To Directory simple-taiko-node
-   ```
-   cd simple-taiko-node
-   ```
-4. Copy .env
-   ```
-   cp .env.sample .env
-   ```
-3. Edit .env
-   ```
-   nano .env
-   ```
-   Change value `L1_ENDPOINT_HTTP` and `L1_ENDPOINT_WS` with your HTTPS And WSS From Alchemy
-
-   Change Value `ENABLE_PROVER` to `true`
-   
-   Change Value `L1_PROVER_PRIVATE_KEY` with your private key from metamask (new wallet)
-   
-   Save file CTRL + x + Y + enter
-   
-4. Update Node
-   ```
-   docker compose pull
-   ```
-5. Run Node
-   ```
-   docker compose up -d
-   ```
-6. Check log
-   ```
-   docker compose logs -f 
-   ```
-   or use
-   ```
-   docker ps
-   ```
-   ```
-   docker inspect CONTAINER_NAME | grep log
-   ```
-   ```
-   tail -f
-   ```
-   ```
-   cd LOG_FOLDER
-   ```
-   file -i .log
-   The files type: "application/octet-stream; charset=binary" have errors, can be RENAMED/REMOVED/UPDATED for fix.
-   ```
-8. Cek log for block approval
-   ```
-   docker compose logs -f | grep "💰 Your block proof was accepted"
-   ```
    
 ### 4. Monitor Node
 
