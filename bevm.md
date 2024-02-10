@@ -60,9 +60,24 @@ Change Your-Node-Name on your own
 ```
 
    
-### 4. Monitor Node
+### 4. Run the node with Docker
 
-A node dashboard will be running on `localhost` on the `GRAFANA_PORT` you set in your `.env` or `.env.l3` file. For a Grimsvotn L2 node that would default to: 
+Fetch the docker image
 ```
-http://localhost:3001/d/L2ExecutionEngine/l2-execution-engine-overview
+docker pull btclayer2/bevm:testnet-v0.1.2
 ```
+Run a docker container
+```
+docker run -d --restart always --name bevm-node \
+  -p 8087:8087 -p 30333:30333 \
+  -v $PWD/config.json:/config.json -v $PWD/data:/data \
+  -v $PWD/log:/log -v $PWD/keystore:/keystore \
+  btclayer2/bevm:testnet-v0.1.2 /usr/local/bin/bevm \
+  --config /config.json
+```
+Check the logs from your container
+```
+tail -f log/bevm.log
+```
+Check it on the telemetry
+[Telemetry Link](https://telemetry-testnet.bevm.io/)
